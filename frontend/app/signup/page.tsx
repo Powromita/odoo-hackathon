@@ -44,7 +44,7 @@ onChange={(e) => setName(e.target.value)}
 type="text"
 placeholder="Full name"
 required
-className="w-full p-3 border border-gray-300 rounded-lg text-black"
+className="w-full p-3 border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
 />
 
 
@@ -54,7 +54,7 @@ onChange={(e) => setEmail(e.target.value)}
 type="email"
 placeholder="Email"
 required
-className="w-full p-3 border border-gray-300 rounded-lg text-black"
+className="w-full p-3 border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
 />
 
 
@@ -64,13 +64,13 @@ onChange={(e) => setPassword(e.target.value)}
 type="password"
 placeholder="Password"
 required
-className="w-full p-3 border border-gray-300 rounded-lg text-black"
+className="w-full p-3 border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
 />
 
 
 <button
 type="submit"
-className="w-full bg-black text-white py-3 rounded-xl mt-2 hover:bg-gray-800 disabled:opacity-60"
+className="w-full bg-blue-600 text-white py-3 rounded-lg mt-2 hover:bg-blue-700 disabled:opacity-60 font-medium transition"
 disabled={loading}
 >
 {loading ? "Creating..." : "Create Account"}

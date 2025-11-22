@@ -139,7 +139,7 @@ export default function DeliveriesPage() {
   const selectedWarehouse = warehouses.find(w => w.id === formData.warehouse_id)
 
   return (
-    <div className="min-h-screen bg-gray-50 p-8">
+    <DashboardLayout>
       <div className="max-w-2xl mx-auto">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Stock Deliveries</h1>
         <p className="text-gray-600 mb-8">Record outgoing stock from warehouse</p>
@@ -291,6 +291,6 @@ export default function DeliveriesPage() {
           </div>
         </div>
       )}
-    </div>
+    </DashboardLayout>
   )
 }
